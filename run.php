@@ -2,10 +2,10 @@
 require 'api-coinmaster.php';
 $class = new coinmaster;
 popen('cls', 'w');
-echo "COIN MASTER | By ZEROTWO-CHEAT \n";
-echo "------------------ [ Setting ] ------------------\n";
-$link = readline("Link : ");
-$count = readline("Total : ");
+echo "PANUPONG | TH\n";
+echo "------------------ [ FB: PANUPONG HANGSO ] ------------------\n";
+$link = readline(" Spin By.PANUPONG :");
+$count = readline(" Number | By.PANUPONG :");
 popen('cls', 'w');
 echo "------------------ [ 0/".$count." ] ------------------\n";
 $bossnz = preg_match_all('/~[^}]*?s=m/', $link, $a);
@@ -27,7 +27,7 @@ for ($i=0; $i < $count; $i++) {
 	$start = $class->addspin($link);
 	$number = $i+1;
 	popen('cls', 'w');
-	echo "================= [ API BY ZEROTWO-CHEAT ] =================\n";
+	echo "================= [ FB: PANUPONG HANGSO ] =================\n";
 	print_r("[ ".$number."/".$count." ] - Code : ".$code."\n");
 }
 ?>

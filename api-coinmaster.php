@@ -1,7 +1,7 @@
 <?php 
 class coinmaster{
-	const CURL_TIMEOUT = 1000;
-	const CONNECT_TIMEOUT = 10;
+	const CURL_TIMEOUT = 3600;
+	const CONNECT_TIMEOUT = 30;
 	private function Curl($method, $url, $header, $data, $cookie){
 		$ch = curl_init();
 		curl_setopt($ch, CURLOPT_URL, $url);
@@ -59,25 +59,23 @@ class coinmaster{
 	}
 	private function gettokenfb(){
 		$access_tokenfb = [
-			'423569505307331|Ol_hkdJkw8kggT28CQtE0EtBCj4',
-			'722774828327858|4UFHY6WiqHh8WKdojtigjMvNXqA',
-			'372418187406582|rTb-JZZeD3KLxEApM6Xovr1I5B0',
-			'817501852318179|vTdk45Y3BbmcF2FcLPt_trWaxBA',  
-			'362202078390507|lWRIqxOn5GRrBEYFvnTkxdN96pU',
-			'663740864337443|zJS9diKo2ieezSFBIOL4NYI_MCo',
-			'2833820366876556|PMYT3ecakVhBfiZD-sU5qDHD2cE',
-			'403522687675972|WnvRZSWAc84-05cqM4_MK4dh0ZQ',  
-			'366471521349953|HGP5dZ4LRZwQh9lQTNKLWKYxfKo',  
+			'407757680350381|Y6rlrqiWRWBifLQgrVgIsI7Nkds',
+			'216515383189275|o9XPaKdOGX9BYwCfdWtF5fKled4',
+            '367730367863476|9WT2cumLaFa-Rx36-2jwAfJpD3M',
+            '989495084877711|wXQmfMWbrFssL8HRYFhrdcBtrFQ',
+            '210037587342055|xJKdvYnrMADxe2ojrgEauN10uUE',
+            '2850756485167839|zNj3BXiFggz0nFNz1uPPuC2l-Tk',
+			
 		];
 		$bz = 0;
 		do {
 			$facebookgen = $this->Curl("GET", "https://graph.facebook.com/670835880297746/accounts/test-users?access_token=".$access_tokenfb[$bz]."&installed=true&permissions=read_stream&method=post", false, false, false);
 			$token = json_decode($facebookgen,true);
 			$bz++;
-			if ($bz > 9) {
+			if ($bz > 2) {
 				$bz = 0;
 			}
-			echo "ZEROTWO-CHEAT >>>> : ".$bz."\n";
+			echo "PANUPONG HANGSO | สปิน ไทยแลนด์ ✅สำเร็จ🇹🇭: ".$bz."\n";
 		} while (empty($token['access_token']));
 		$this->fb['access_token'] = $token['access_token'];
 		return $this->fb['access_token'];
