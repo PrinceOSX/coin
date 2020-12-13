@@ -59,12 +59,12 @@ class coinmaster{
 	}
 	private function gettokenfb(){
 		$access_tokenfb = [
-			'402090817578297|GwgmEnGWaniTnIpOV30CTk1tAZA',
-			'1121395484943443|_vMbODBtp2xe57PXKumz1aLTrTg',
-            '447537873074459|zxQ5qHhXKVGEuXWA-3a50aosgH0',
-            '736026113676684|gBtbBIkNsteCjSKJ8C83QWXynlc',
-            '301231654505577|S0Pwni7QIYdxmLMpmGRvaVi6JIY',
-            '205670741157007|ZvNvmCWEXedzgg6_cvbiYZzCOG8',
+			'419980425865671|kZlS82Yulk0rCwhZ7fVS0-GBUkA',
+			'152206922910374|Im897amOoblO7joN7CsOynHznkk',
+            '297079068397747|OeZM-LGn5xxMVBIJz0WjH3huXa8',
+            '2776758002580287|gTtSXwP69jHAa3MmLtFV5FDi0WM',
+            '237909121088011|ozu5TiRLGpmX4qBjHc_G8fifAzs',
+            '03100644696495|Ju7awIGBHczgENODesZbm8Xpuc8',
 			
 		];
 		$bz = 0;
